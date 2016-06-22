@@ -60,9 +60,6 @@ source `brew --prefix`/etc/profile.d/z.sh
 autoload -Uz colors
 colors
 
-# direnv
-#eval "$(direnv hook zsh)"
-
 # Search shell history with peco: https://github.com/peco/peco
 # Adapted from: https://github.com/mooz/percol#zsh-history-search
 if which peco &> /dev/null; then
