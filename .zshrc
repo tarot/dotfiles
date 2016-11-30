@@ -1,14 +1,5 @@
 export LANG=ja_JP.UTF-8
 
-# プロンプトで変数展開などを有効に
-setopt prompt_subst
-# 左プロンプト %n:ユーザ名 %m:マシン名 %~:カレントディレクトリ
-PROMPT="%n@%m:%~$ "
-# 右プロンプト %T:現在時刻
-#RPROMPT="%T"
-# コマンド実行時に右プロンプトを消す
-#setopt transient_rprompt
-
 # 履歴
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
@@ -53,6 +44,11 @@ autoload -Uz zmv
 # zargs
 autoload -Uz zargs
 
+# vcs_info
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats '[%s][*%F{green}%b%f]:'
+zstyle ':vcs_info:*' actionformats '[%s][*%F{green}%b%f(%F{red}%a%f)]:'
+
 # z
 source `brew --prefix`/etc/profile.d/z.sh
 
@@ -72,6 +68,16 @@ if which peco &> /dev/null; then
   zle -N peco_select_history
   bindkey '^R' peco_select_history
 fi
+
+# プロンプトで変数展開などを有効に
+setopt prompt_subst
+# 左プロンプト %n:ユーザ名 %m:マシン名 %~:カレントディレクトリ
+precmd() { vcs_info }
+PROMPT='${vcs_info_msg_0_}%~$%f '
+# 右プロンプト %T:現在時刻
+RPROMPT='%T'
+# コマンド実行時に右プロンプトを消す
+#setopt transient_rprompt
 
 alias ls="ls -FG"
 alias mitmproxy="mitmproxy --palette solarized_light"
