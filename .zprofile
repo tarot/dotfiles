@@ -1,7 +1,19 @@
-export PATH="$HOME/bin:$HOME/.nodebrew/current/bin:$HOME/.gocode/bin:/usr/local/bin:$PATH"
+# go
+export GOPATH="$HOME/.gocode"
+PATH="$GOPATH/bin:$PATH"
+
+# ruby
 eval "$(rbenv init -)"
+
+# java
+export JAVA_HOME=$(jenv javahome)
 eval "$(jenv init -)"
 
-export GOPATH="$HOME/.gocode"
-export JAVA_HOME=$(jenv javahome)
+# nodejs
+PATH="$HOME/.nodebrew/current/bin:$PATH"
+
+# android sdk
 export ANDROID_HOME="$(brew --prefix android-sdk)"
+
+# path
+export PATH="$HOME/bin:$PATH"
