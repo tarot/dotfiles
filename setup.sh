@@ -1,5 +1,7 @@
 for e in .gitconfig .gitignore_global .tmux.conf .zprofile .zshrc .peco
 do
-    rm -r ~/"$e"
+    if [ -e ~/"$e" ]; then
+        rm -r ~/"$e"
+    fi
     ln -s "$(pwd)"/"$e" ~/"$e"
 done
