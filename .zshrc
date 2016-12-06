@@ -118,3 +118,10 @@ alias ls="ls -FG"
 alias mitmproxy="mitmproxy --palette solarized_light"
 alias rm="trash"
 export LESS='-R'
+
+### tmux ###
+
+# ウィンドウ名をカレントディレクトリ+Gitリポジトリルートに
+autoload -Uz add-zsh-hook
+. ~/.bin/show-current-dir-as-window-name.sh
+add-zsh-hook chpwd show-current-dir-as-window-name
