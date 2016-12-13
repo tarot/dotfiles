@@ -38,6 +38,12 @@ setopt hist_reduce_blanks
 autoload -Uz colors
 colors
 
+# syntax-highlighting
+. "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+# autosuggestions
+. "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
 ### 補完機能 ###
 
 ## zsh-completionsを利用
