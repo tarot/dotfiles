@@ -43,6 +43,7 @@ colors
 
 # autosuggestions
 . "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='underline'
 
 ### 補完機能 ###
 
