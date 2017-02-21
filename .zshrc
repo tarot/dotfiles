@@ -48,7 +48,9 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='underline'
 ### 補完機能 ###
 
 ## zsh-completionsを利用
+fpath=($(brew --prefix docker)/share/zsh/site-functions $fpath)
 fpath=($(brew --prefix)/share/zsh-completions $fpath)
+
 autoload -Uz compinit
 compinit
 # moshはsshの補完を利用
