@@ -13,9 +13,6 @@ eval "$(jenv init -)"
 # nodejs
 PATH="$HOME/.nodebrew/current/bin:$PATH"
 
-# android sdk
-export ANDROID_HOME="$(brew --prefix android-sdk)"
-
 # path
 export PATH="$HOME/bin:$PATH"
 
