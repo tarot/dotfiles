@@ -82,10 +82,6 @@ autoload -Uz zmv
 # zargs
 autoload -Uz zargs
 
-### z ###
-
-source `brew --prefix`/etc/profile.d/z.sh
-
 ### peco ###
 
 # Search shell history with peco: https://github.com/peco/peco
