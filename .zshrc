@@ -126,4 +126,5 @@ export LESS='-R'
 # ウィンドウ名をカレントディレクトリ+Gitリポジトリルートに
 autoload -Uz add-zsh-hook
 . ~/.bin/show-current-dir-as-window-name.sh
-add-zsh-hook chpwd show-current-dir-as-window-name
+add-zsh-hook precmd show-current-dir-as-window-name
+add-zsh-hook preexec show-current-dir-as-window-name
