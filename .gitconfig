@@ -2,7 +2,7 @@
 	name = Taro Uraoka
 	email = turaoka@pasonatquila.com
 [core]
-	excludesfile = /Users/tarot/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 [filter "media"]
 	clean = git-media-clean %f
