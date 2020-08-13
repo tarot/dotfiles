@@ -1,6 +1,6 @@
 [user]
 	name = Taro Uraoka
-	email = turaoka@pasonatquila.com
+	email = turaoka@circlace.com
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
