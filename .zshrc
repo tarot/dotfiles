@@ -52,7 +52,7 @@ fpath=($(brew --prefix docker)/share/zsh/site-functions $fpath)
 fpath=($(brew --prefix)/share/zsh-completions $fpath)
 
 autoload -Uz compinit
-compinit
+compinit -u
 # moshはsshの補完を利用
 compdef mosh=ssh
 # awscli
