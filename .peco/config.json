@@ -1,6 +1,7 @@
 {
+    "Use256Color": true,
 	"Style": {
-		"Selected": ["on_white"],
+		"Selected": ["white", "on_14"],
 		"Matched": ["bold", "red"]
 	}
 }
