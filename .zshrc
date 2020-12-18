@@ -16,6 +16,9 @@ eval "$(jenv init -)"
 # nodejs
 PATH="$HOME/.nodebrew/current/bin:$PATH"
 
+# gcloud
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+
 # path
 export PATH="$HOME/bin:$PATH"
 
@@ -61,6 +64,9 @@ compdef mosh=ssh
 zstyle ':completion:*:default' menu select=2
 ## Shift-Tabで補完候補の逆順選択(いきなりmenu-completeが始まるのが気に入らない)
 bindkey "^[[Z" reverse-menu-complete
+
+# gcloud
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
 ### history-search-end ###
 
