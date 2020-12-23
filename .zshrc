@@ -14,7 +14,7 @@ export JAVA_HOME=$(jenv javahome)
 eval "$(jenv init -)"
 
 # nodejs
-PATH="$HOME/.nodebrew/current/bin:$PATH"
+eval "$(nodenv init -)"
 
 # gcloud
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
