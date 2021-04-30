@@ -130,6 +130,7 @@ RPROMPT='%T'
 ### alias, default option ###
 alias ls="ls -FG"
 alias rm="trash"
+alias teleport="kill $(ps x | grep /Applications/teleport.app/Contents/MacOS/teleport | grep -v grep | awk '{print $1}') && open -a teleport"
 export LESS='-R'
 
 ### tmux ###
