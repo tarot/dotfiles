@@ -129,7 +129,6 @@ RPROMPT='%T'
 
 ### alias, default option ###
 alias ls="ls -FG"
-alias mitmproxy="mitmproxy --set console_palette=solarized_light"
 alias rm="trash"
 export LESS='-R'
 
