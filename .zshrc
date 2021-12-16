@@ -28,8 +28,8 @@ export LANG=ja_JP.UTF-8
 
 # 履歴
 HISTFILE=~/.zsh_history
-HISTSIZE=100000
-SAVEHIST=10000
+HISTSIZE=1000000
+SAVEHIST=100000
 # 履歴の連続する同じコマンドを除去
 setopt hist_ignore_dups
 # 履歴の無駄な空白を除去
@@ -44,9 +44,9 @@ colors
 # syntax-highlighting
 . "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
-# autosuggestions
-. "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='underline'
+# autosuggestions (history-search-endがおかしくなるので無効)
+# . "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='underline'
 
 ### 補完機能 ###
 
