@@ -1,8 +1,3 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
 ### PATH ###
 # go
 export GOPATH="$HOME/.gocode"
@@ -149,8 +144,3 @@ add-zsh-hook preexec show-current-dir-as-window-name
 
 ### Capybara-Webkit
 # export PATH="$HOME/Qt5.5.0/5.5/clang_64/bin:$PATH"
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
