@@ -91,3 +91,6 @@ export LESS='-R'
 
 ### rtx
 eval "$($(brew --prefix)/bin/rtx activate zsh)"
+
+### salesfoce/cli autocomplete
+eval $(sf autocomplete script zsh)
