@@ -129,7 +129,6 @@ RPROMPT='%T'
 
 ### alias, default option ###
 alias ls="ls -FG"
-alias rm="trash"
 export LESS='-R'
 
 . ~/.bin/teleport.sh
