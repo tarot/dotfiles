@@ -1,26 +1,7 @@
 ### PATH ###
-# go
-export GOPATH="$HOME/.gocode"
-PATH="$GOPATH/bin:$PATH"
 
-# ruby
-eval "$(rbenv init -)"
-
-# ruby-build
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-
-# java
-export JAVA_HOME=$(jenv javahome)
-eval "$(jenv init -)"
-
-# nodejs
-eval "$(nodenv init -)"
-
-# gcloud
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
-
-# path
-export PATH="$HOME/bin:$PATH"
+# ~/.bin
+export PATH="$HOME/.bin:$PATH"
 
 ### その他 ###
 
@@ -40,9 +21,6 @@ setopt hist_reduce_blanks
 # colors
 autoload -Uz colors
 colors
-
-# syntax-highlighting
-. "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 ### 補完機能 ###
 
