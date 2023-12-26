@@ -88,6 +88,3 @@ alias ls="ls -FG"
 export LESS='-R'
 
 . ~/.bin/teleport.sh
-
-### Capybara-Webkit
-# export PATH="$HOME/Qt5.5.0/5.5/clang_64/bin:$PATH"
