@@ -16,7 +16,7 @@ setopt hist_ignore_dups
 # 履歴の無駄な空白を除去
 setopt hist_reduce_blanks
 # zshプロセス間で履歴を共有
-# setopt share_history
+setopt share_history
 
 # colors
 autoload -Uz colors
@@ -82,8 +82,6 @@ precmd() { vcs_info }
 PROMPT='${vcs_info_msg_0_}%~$%f '
 # 右プロンプト %T:現在時刻
 RPROMPT='%T'
-# コマンド実行時に右プロンプトを消す
-#setopt transient_rprompt
 
 ### alias, default option ###
 alias ls="ls -FG"
