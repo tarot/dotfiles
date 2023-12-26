@@ -25,8 +25,7 @@ colors
 ### 補完機能 ###
 
 # zsh-completionsを利用
-fpath=($(brew --prefix docker)/share/zsh/site-functions $fpath)
-fpath=($(brew --prefix)/share/zsh-completions $fpath)
+FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
 autoload -Uz compinit
 compinit -u
