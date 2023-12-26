@@ -90,3 +90,4 @@ export LESS='-R'
 . ~/.bin/teleport.sh
 
 ### rtx
+eval "$($(brew --prefix)/bin/rtx activate zsh)"
