@@ -26,6 +26,7 @@ colors
 
 # zsh-completionsを利用
 FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
 autoload -Uz compinit
 compinit -u
@@ -87,3 +88,5 @@ alias ls="ls -FG"
 export LESS='-R'
 
 . ~/.bin/teleport.sh
+
+### rtx
