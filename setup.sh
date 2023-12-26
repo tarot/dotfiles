@@ -1,4 +1,4 @@
-for e in .gitconfig .gitignore_global .zshrc .peco .bin
+for e in .gitconfig .gitignore_global .zshrc .zprofile .peco .bin
 do
     if [ -e ~/"$e" ]; then
         rm -r ~/"$e"
