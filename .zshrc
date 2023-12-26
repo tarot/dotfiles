@@ -44,38 +44,31 @@ colors
 # syntax-highlighting
 . "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
-# autosuggestions (history-search-endがおかしくなるので無効)
-# . "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='underline'
-
 ### 補完機能 ###
 
-## zsh-completionsを利用
+# zsh-completionsを利用
 fpath=($(brew --prefix docker)/share/zsh/site-functions $fpath)
 fpath=($(brew --prefix)/share/zsh-completions $fpath)
 
 autoload -Uz compinit
 compinit -u
-# moshはsshの補完を利用
-compdef mosh=ssh
-# awscli
-#source `brew --prefix`/bin/aws_zsh_completer.sh
-## 補完候補をTab, C-f, b, n, p, 矢印で選択(C-n, pはなぜかhistory-search-endにとられる)
-zstyle ':completion:*:default' menu select=2
-## Shift-Tabで補完候補の逆順選択(いきなりmenu-completeが始まるのが気に入らない)
-bindkey "^[[Z" reverse-menu-complete
 
-# gcloud
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+# 補完候補をTab, C-f, b, n, p, 矢印で選択(C-n, pはなぜかhistory-search-endにとられる)
+zstyle ':completion:*:default' menu select=2
+
+# Shift-Tabで補完候補の逆順選択(いきなりmenu-completeが始まるのが気に入らない)
+bindkey "^[[Z" reverse-menu-complete
 
 ### history-search-end ###
 
 # history-search-endで前方一致コマンド履歴をたどる時カーソルを行末に
 autoload -Uz history-search-end
-## zsh line editor(zle)に登録
+
+# zsh line editor(zle)に登録
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
-## キーバインド(^[[Aは上、^[[Bは下矢印。zshでCtrl-Vすれば調べられる)
+
+# キーバインド(^[[Aは上、^[[Bは下矢印。zshでCtrl-Vすれば調べられる)
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
