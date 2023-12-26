@@ -134,13 +134,5 @@ export LESS='-R'
 
 . ~/.bin/teleport.sh
 
-### tmux ###
-
-# ウィンドウ名をカレントディレクトリ+Gitリポジトリルートに
-autoload -Uz add-zsh-hook
-. ~/.bin/show-current-dir-as-window-name.sh
-add-zsh-hook precmd show-current-dir-as-window-name
-add-zsh-hook preexec show-current-dir-as-window-name
-
 ### Capybara-Webkit
 # export PATH="$HOME/Qt5.5.0/5.5/clang_64/bin:$PATH"
