@@ -1,4 +1,4 @@
-for e in .gitconfig .gitignore_global .tmux.conf .zshrc .peco .bin
+for e in .gitconfig .gitignore_global .zshrc .peco .bin
 do
     if [ -e ~/"$e" ]; then
         rm -r ~/"$e"
