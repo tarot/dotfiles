@@ -81,16 +81,6 @@ bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 bindkey "^[[B" history-beginning-search-forward-end
 
-### zshコマンド ###
-
-# zmv
-autoload -Uz zmv
-## クオート省略、グループ化括弧省略
-# alias zmv='noglob zmv -W'
-
-# zargs
-autoload -Uz zargs
-
 ### peco ###
 
 # Search shell history with peco: https://github.com/peco/peco
