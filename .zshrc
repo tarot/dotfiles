@@ -89,8 +89,8 @@ export LESS='-R'
 
 . ~/.bin/teleport.sh
 
-### rtx
-eval "$($(brew --prefix)/bin/rtx activate zsh)"
+### mise
+eval "$($(brew --prefix)/bin/mise activate zsh)"
 
 ### salesfoce/cli autocomplete
 eval $(sf autocomplete script zsh)
