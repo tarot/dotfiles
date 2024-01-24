@@ -93,4 +93,4 @@ export LESS='-R'
 eval "$($(brew --prefix)/bin/mise activate zsh)"
 
 ### salesfoce/cli autocomplete
-eval $(sf autocomplete script zsh)
+eval $(mise x -C ~ -- sf autocomplete script zsh)
